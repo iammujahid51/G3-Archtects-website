@@ -8,9 +8,15 @@
   font-style: normal;
 }
 /* shared styles */
+body{
+  background-color: rgb(166, 176, 185);
+}
 .display-flex{
   display: flex;
 }
+ main, section{
+  margin-top: 130px;
+ }
 /* dark 02 */
 .text-gray{
   color: #424242;
@@ -29,6 +35,10 @@
   padding: 20px 25px ;
   border-radius: 8px ;
   border: none;
+}
+main{
+  max-width: 1440px;
+  margin: 0 auto;
 }
 /* header styles */
 /* navbar related styles */
@@ -71,10 +81,109 @@
 .banner-image{
   width: 100%;
 }
+.teams{
+  align-items: center;
+}
+.team-img-comtainer{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  gap: 24px;
+  height: 100%;
+  width: 100%;
+}
+.our-features{
+  margin-left: 130px;
+}
+.features-title{
+  font-size: 2.5rem;
+  max-width: 300px;
+}
+.Quick{
+  color: #424242;
+}
+.Features{
+  color: #d87d15;
+}
+.features-description{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #727272;
+}
+
+
+
+
+
+
+.section-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #131313;
+}
+.text-light{
+  max-width: 350px;
+  font-size: 1rem;
+  font-size: 400;
+}
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.fact-crad{
+  border: 1px solid #d87d15;
+  max-width: 240px;
+  max-height: 240px;
+  border-radius: 8px;
+  justify-content: center;
+  padding: 30px 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color:#424242 ;
+}
+.fact-name{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #727272;
+}
+
+
+
+
+
+
+
+
 /* responsive media quariy */
 @media screen and (max-width:576px ) {
-  .navbar,.nav-links{
+  .navbar,
+  .nav-links ,
+  .teams{
     flex-direction: column;
   }
-  
+  .team-img-comtainer{
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 40px;
+    
+  }
+  .our-features{
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width:567px) and (max-width:993px) {
+  .teams{
+    flex-direction: column;
+  }
+  .our-features{
+    margin: 50px auto;
+  }
 }
