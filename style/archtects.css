@@ -191,7 +191,7 @@ font-size: 1.50rem;
 font-weight: 500;
 color: #FFFFFF;
 margin-left: -90px ;
-margin-top:-100px;
+margin-top:-115px;
 }
 #Experience-years{
   font-size: 4rem;
@@ -201,6 +201,9 @@ margin-top:-100px;
 }
 .features-jpn .features-img{
   width: 100%;
+}
+.features-img{
+  margin-top: 215px;
 }
 
 
