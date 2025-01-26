@@ -324,8 +324,23 @@ margin-top:-115px;
     margin-left: 40px;
    }
 
+   .nav-item :hover{
+    color: blue;
+    background-color: #d87d15;
+  } 
+  .brand{
+    font-size:2rem;
+  }
+  .banner-title{
+    font-size: 2.5rem;
+  }
+  body{
+    width: 100%;
+  }
+  .bg-light{
+    max-width: none;
    
-  
+  }
 }
 
 
